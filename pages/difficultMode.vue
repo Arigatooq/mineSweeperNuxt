@@ -87,6 +87,7 @@ class Game{
         this.resetGame();
         this.showHardGame = true;
         this.showChooseCom = false;
+        this.stopTimer()
     },
 
     goToBack(){

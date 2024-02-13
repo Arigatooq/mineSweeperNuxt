@@ -90,6 +90,7 @@ class Game{
         this.minutes = 40;
         this.seconds = 0;
         this.resetGame();
+        this.stopTimer()
     },
 
     applyOptions(){

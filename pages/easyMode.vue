@@ -96,7 +96,7 @@ class Game{
         this.resetGame();
         this.showEasyGame = true;
         this.showChooseCom = false;
-        this.startTimer();
+        this.stopTimer();
 
 
     },
@@ -243,8 +243,6 @@ class Game{
                 
             }
         }
-      console.log(this.cells_opened)
-
     },
     setFlag(cell){
         this.init(cell);

@@ -17,7 +17,6 @@ class Game{
   export default{
     data: function(){
         return {
-
             mines: 10,
             width: 0,
             height: 0,

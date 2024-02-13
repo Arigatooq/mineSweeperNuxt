@@ -11,6 +11,10 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./store/**']
+  },
+  target: 'static',
+  router: {
+    base: '/mineSweeperNuxt/'
   }
 })
 

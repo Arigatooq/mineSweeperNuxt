@@ -45,16 +45,16 @@ const showDifficultRef = () =>{
 };
 
 
-const LocalStorageEasy = localStorage.getItem("scoreEasy");
-const useLocalStorageEasy = JSON.parse(LocalStorageEasy)
-localStorage.removeItem(LocalStorageEasy)
+// const LocalStorageEasy = localStorage.getItem("scoreEasy");
+// const useLocalStorageEasy = JSON.parse(LocalStorageEasy)
+// localStorage.removeItem(LocalStorageEasy)
 
 
-const LocalStorageNormal = localStorage.getItem("scoreNormal");
-const useLocalStorageNormal = JSON.parse(LocalStorageNormal)
+// const LocalStorageNormal = localStorage.getItem("scoreNormal");
+// const useLocalStorageNormal = JSON.parse(LocalStorageNormal)
 
-const LocalStorageDifficult = localStorage.getItem("scoreDifficult");
-const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
+// const LocalStorageDifficult = localStorage.getItem("scoreDifficult");
+// const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
 
 
 </script>
@@ -69,7 +69,7 @@ const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
         <p class="best_time">The best time to complete an easy mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of useLocalStorageEasy" :key="record">
+                <li v-for="record of sorted" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 
@@ -81,7 +81,7 @@ const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
         <p class="best_time">The best time to complete a normal mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of useLocalStorageNormal" :key="record">
+                <li v-for="record of sortedNormal" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 
@@ -93,7 +93,7 @@ const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
         <p class="best_time">The best time to complete a difficult mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of useLocalStorageDifficult" :key="record">
+                <li v-for="record of sortedDifficult" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 

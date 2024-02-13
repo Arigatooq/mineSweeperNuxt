@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   
-
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt',  '@pinia/nuxt',],
 
@@ -13,8 +12,5 @@ export default defineNuxtConfig({
     storesDirs: ['./store/**']
   },
   target: 'static',
-  router: {
-    base: '/mineSweeperNuxt/'
-  }
 })
 

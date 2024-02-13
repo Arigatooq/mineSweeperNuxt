@@ -175,7 +175,6 @@ class Game{
         this.state = "lost";
         this.openAllCells();
         this.stopTimer();
-      
     },
   
     winGame(){

@@ -45,16 +45,14 @@ const showDifficultRef = () =>{
 };
 
 
-// const LocalStorageEasy = localStorage.getItem("scoreEasy");
-// const useLocalStorageEasy = JSON.parse(LocalStorageEasy)
-// localStorage.removeItem(LocalStorageEasy)
+const LocalStorageEasy = localStorage.getItem("scoreEasy");
+const useLocalStorageEasy = JSON.parse(LocalStorageEasy)
 
+const LocalStorageNormal = localStorage.getItem("scoreNormal");
+const useLocalStorageNormal = JSON.parse(LocalStorageNormal)
 
-// const LocalStorageNormal = localStorage.getItem("scoreNormal");
-// const useLocalStorageNormal = JSON.parse(LocalStorageNormal)
-
-// const LocalStorageDifficult = localStorage.getItem("scoreDifficult");
-// const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
+const LocalStorageDifficult = localStorage.getItem("scoreDifficult");
+const useLocalStorageDifficult = JSON.parse(LocalStorageDifficult)
 
 
 </script>
@@ -69,7 +67,7 @@ const showDifficultRef = () =>{
         <p class="best_time">The best time to complete an easy mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of sorted" :key="record">
+                <li v-for="record of useLocalStorageEasy" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 
@@ -81,7 +79,7 @@ const showDifficultRef = () =>{
         <p class="best_time">The best time to complete a normal mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of sortedNormal" :key="record">
+                <li v-for="record of useLocalStorageNormal" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 
@@ -93,7 +91,7 @@ const showDifficultRef = () =>{
         <p class="best_time">The best time to complete a difficult mode</p>
         <div class="wrapper">
             <ul>
-                <li v-for="record of sortedDifficult" :key="record">
+                <li v-for="record of useLocalStorageDifficult" :key="record">
                     <div class="record">
                         {{ record }}
                     </div> 

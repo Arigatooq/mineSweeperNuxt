@@ -67,7 +67,6 @@ class Game{
     saveStorage(){
       let storageScore = this.getStorage()
       storageScore = JSON.parse(JSON.stringify(useLocalHormal))
-
       this.setStorage(storageScore)
     },
 
